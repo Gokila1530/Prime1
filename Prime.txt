@@ -7,7 +7,7 @@ namespace checkPrime
         public void TestMethod1()
         {
 
-            List<int> lival = new List<int>() { 11, 0, 2, 31, 0, 3, 0, 12 ,15};
+            List<int> lival = new List<int>() { 11, 0, 2, 31, 0, 3, 0, 12 ,15,21};
 
 
             foreach (int value in lival)
