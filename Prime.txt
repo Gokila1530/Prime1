@@ -1,0 +1,38 @@
+namespace checkPrime
+{
+    [TestClass]
+    public class UnitTest1
+    {
+        [TestMethod]
+        public void TestMethod1()
+        {
+
+            List<int> lival = new List<int>() { 11, 0, 2, 31, 0, 3, 0, 12 ,15};
+
+
+            foreach (int value in lival)
+            {
+                int m = 0;
+
+                for (int i = 2; i <= value; i++)
+                {
+                    if (value % i == 0)
+                    {
+                        m++;
+                      
+                    }
+                }
+
+                if (m!= 0)
+                {
+                    Console.WriteLine("The given number is a prime");
+                }
+                else
+                {
+                    Console.WriteLine("Not a Prime number");
+                }
+            }
+
+        }
+    }
+}
